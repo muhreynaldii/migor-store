@@ -2,7 +2,7 @@ import React from "react";
 
 function Domisili() {
   return (
-    <div className="space-x-4">
+    <div className="my-5 space-x-4">
       <select name="kecamatan" id="kecamatan" className="rounded border">
         <option value="1">Antapani</option>
       </select>
