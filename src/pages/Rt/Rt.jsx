@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-function Rw() {
+function Rt() {
   return (
     <>
       <Outlet />
@@ -9,4 +9,4 @@ function Rw() {
   );
 }
 
-export default Rw;
+export default Rt;

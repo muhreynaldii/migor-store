@@ -3,6 +3,7 @@ import Perioda from "../../components/Perioda/Perioda";
 import Header from "./../../components/Header/Header";
 import Container from "./../../components/Container/Container";
 import user from "../../assets/images/user.png";
+import { Link } from "react-router-dom";
 
 function DashboardStaff() {
   return (
@@ -23,9 +24,11 @@ function DashboardStaff() {
             </label>
             <div className="flex space-x-4">
               <Perioda />
-              <button className="mt-2 rounded-md bg-green-custom py-2 px-3 text-white">
-                Cek
-              </button>
+              <Link to="/staff/data">
+                <button className="mt-2 rounded-md bg-green-custom py-2 px-3 text-white">
+                  Cek
+                </button>
+              </Link>
             </div>
           </div>
         </div>
