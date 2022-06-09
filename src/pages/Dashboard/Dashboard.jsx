@@ -80,53 +80,10 @@ function Dashboard() {
                             50
                           </td>
                           <td className="space-x-2 whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            <Link to={"/staff"} className="text-blue-custom">
-                              Edit
-                            </Link>
-                            <span className="text-blue-custom">Hapus</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b">
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
-                            2
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            Sunco 1 ltr
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            8 Mei - 14 Mei 2022
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            Rp 25.000
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            50
-                          </td>
-                          <td className="space-x-2 whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            <Link to={"/staff"} className="text-blue-custom">
-                              Edit
-                            </Link>
-                            <span className="text-blue-custom">Hapus</span>
-                          </td>
-                        </tr>
-                        <tr className="border-b">
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
-                            3
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            Sunco 1 ltr
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            15 Mei - 21 Mei 2022
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            Rp 25.000
-                          </td>
-                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            50
-                          </td>
-                          <td className="space-x-2 whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
-                            <Link to={"/staff"} className="text-blue-custom">
+                            <Link
+                              to={"/admin/editperioda"}
+                              className="text-blue-custom"
+                            >
                               Edit
                             </Link>
                             <span className="text-blue-custom">Hapus</span>
@@ -139,25 +96,93 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
-            Tambah
-          </button>
+          <Link to="/admin/tambahperioda">
+            <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
+              Tambah
+            </button>
+          </Link>
         </div>
         <div
           className="container mx-auto my-10 flex
         flex-col items-start bg-white/90 px-7 shadow-lg"
         >
           <h1 className="text base py-5 font-bold">User</h1>
-          <div className="bg-grey-custom h-[180px] w-full">
-            <table border={1}>
-              <tr>
-                <td>No</td>
-              </tr>
-            </table>
+          <div className="h-[180px] w-full bg-gray-custom">
+            <div className="flex flex-col">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+                  <div className="overflow-hidden">
+                    <table className="min-w-full">
+                      <thead className="border-b">
+                        <tr>
+                          <th
+                            scope="col"
+                            className="px-6 py-4 text-left text-sm font-bold text-gray-900"
+                          >
+                            No
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-4 text-left text-sm font-bold text-gray-900"
+                          >
+                            Id
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-4 text-left text-sm font-bold text-gray-900"
+                          >
+                            Password
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-4 text-left text-sm font-bold text-gray-900"
+                          >
+                            Status
+                          </th>
+                          <th
+                            scope="col"
+                            className="px-6 py-4 text-left text-sm font-bold text-gray-900"
+                          >
+                            Modify
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b">
+                          <td className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900">
+                            1
+                          </td>
+                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                            KTRW01
+                          </td>
+                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                            rw232022
+                          </td>
+                          <td className="whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                            Ketua RW 1
+                          </td>
+                          <td className="space-x-2 whitespace-nowrap px-6 py-4 text-sm font-light text-gray-900">
+                            <Link
+                              to={"/admin/edituser"}
+                              className="text-blue-custom"
+                            >
+                              Edit
+                            </Link>
+                            <span className="text-blue-custom">Hapus</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
-            Tambah
-          </button>
+          <Link to="/admin/tambahuser">
+            <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
+              Tambah
+            </button>
+          </Link>
         </div>
       </main>
     </>

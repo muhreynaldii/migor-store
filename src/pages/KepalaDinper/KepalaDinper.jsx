@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import Container from "../../components/Container/Container";
 import Domisili from "../../components/Domisili/Domisili";
 import Perioda from "../../components/Perioda/Perioda";
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
@@ -48,7 +48,7 @@ function KepalaDinper() {
         >
           <div className="h-[180px] w-full bg-white">
             <Perioda />
-            <Line data={data} />
+            <Bar data={data} />
           </div>
         </div>
       </Container>
