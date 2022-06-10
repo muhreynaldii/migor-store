@@ -39,24 +39,24 @@ export default function App() {
           <Route path="edituser" element={<EditUser />} />
           <Route path="tambahdomisili" element={<TambahDomisili />} />
         </Route>
-        <Route path="rw" element={<Rw />}>
+        <Route path="/rw" element={<Rw />}>
           <Route index element={<DashboardRw />} />
           <Route path="perioda" element={<RwPerioda />} />
           <Route path="transaksi" element={<RwTransaksi />} />
           <Route path="tambahrt" element={<TambahRt />} />
           <Route path="uploadbukti" element={<UploadBukti />} />
         </Route>
-        <Route path="rt" element={<Rt />}>
+        <Route path="/rt" element={<Rt />}>
           <Route index element={<RtPerioda />} />
           <Route path="transaksi" element={<DashboardRt />} />
           <Route path="tambahwarga" element={<TambahWarga />} />
         </Route>
-        <Route path="warga" element={<Warga />} />
+        <Route path="/warga" element={<Warga />} />
         <Route path="kepaladinper" element={<KepalaDinper />}>
           <Route index element={<DashboardKepalaDinper />} />
           <Route path="data" element={<DataKepalaDinper />} />
         </Route>
-        <Route path="staff" element={<Staff />}>
+        <Route path="/staff" element={<Staff />}>
           <Route index element={<DashboardStaff />} />
           <Route path="data" element={<DataStaff />} />
         </Route>
