@@ -23,6 +23,8 @@ import DashboardRt from "./pages/DashboardRt/DashboardRt";
 import NotFound from "./pages/NotFound/NotFound";
 import TambahWarga from "./pages/TambahWarga/TambahWarga";
 import TambahRt from "./pages/TambahRt/TambahRt";
+import TambahDomisili from "./pages/TambahDomisili/TambahDomisili";
+import UploadBukti from "./pages/UploadBukti/UploadBukti";
 
 export default function App() {
   return (
@@ -35,12 +37,14 @@ export default function App() {
           <Route path="tambahuser" element={<TambahUser />} />
           <Route path="editperioda" element={<EditPerioda />} />
           <Route path="edituser" element={<EditUser />} />
+          <Route path="tambahdomisili" element={<TambahDomisili />} />
         </Route>
         <Route path="rw" element={<Rw />}>
           <Route index element={<DashboardRw />} />
           <Route path="perioda" element={<RwPerioda />} />
           <Route path="transaksi" element={<RwTransaksi />} />
           <Route path="tambahrt" element={<TambahRt />} />
+          <Route path="uploadbukti" element={<UploadBukti />} />
         </Route>
         <Route path="rt" element={<Rt />}>
           <Route index element={<RtPerioda />} />

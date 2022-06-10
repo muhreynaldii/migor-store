@@ -8,8 +8,13 @@ function Dashboard() {
     <>
       <Header />
       <main className="container mx-auto">
-        <div className="mb-2 space-x-4">
+        <div className="mb-2 flex justify-between space-x-4">
           <Domisili />
+          <Link to="/admin/tambahdomisili">
+            <button className="rounded-sm bg-green-custom px-2 py-1 font-bold text-white">
+              Tambah Kecamatan & Kelurahan
+            </button>
+          </Link>
         </div>
         <div
           className="flex flex-col
@@ -96,11 +101,13 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <Link to="/admin/tambahperioda">
-            <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
-              Tambah
-            </button>
-          </Link>
+          <div className="flex w-full justify-end">
+            <Link to="/admin/tambahperioda">
+              <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
+                Tambah
+              </button>
+            </Link>
+          </div>
         </div>
         <div
           className="container mx-auto my-10 flex
@@ -178,11 +185,13 @@ function Dashboard() {
               </div>
             </div>
           </div>
-          <Link to="/admin/tambahuser">
-            <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
-              Tambah
-            </button>
-          </Link>
+          <div className="flex w-full justify-end">
+            <Link to="/admin/tambahuser">
+              <button className="my-5 self-end rounded-sm bg-blue-custom py-2 px-3 text-white">
+                Tambah
+              </button>
+            </Link>
+          </div>
         </div>
       </main>
     </>

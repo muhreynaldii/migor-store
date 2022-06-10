@@ -3,6 +3,7 @@ import Header from "./../../components/Header/Header";
 import user from "../../assets/images/user.png";
 import cookingOil from "../../assets/images/cooking_oil.png";
 import Swal from "sweetalert2";
+import Perioda from "./../../components/Perioda/Perioda";
 
 function Warga() {
   const [count, setCount] = useState(0);
@@ -62,7 +63,7 @@ function Warga() {
           </div>
           <div className="flex w-1/6 flex-col items-center self-center">
             <div className="h-[23px] w-[200px] bg-gray-custom">
-              <h1 className="text-center text-black">Perioda</h1>
+              <Perioda />
             </div>
             <div className="my-10 flex space-x-4">
               <button onClick={() => setCount((prevCount) => prevCount - 1)}>
